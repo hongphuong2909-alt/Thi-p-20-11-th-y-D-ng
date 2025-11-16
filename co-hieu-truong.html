@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thiệp 20/11 - Cô hiệu trưởng</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: linear-gradient(135deg, #fdeff9, #e0f4ff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+    .card {
+      max-width: 420px;
+      width: 100%;
+      background: #ffffff;
+      border-radius: 24px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+      padding: 24px 22px 26px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      border-radius: 999px;
+      background: rgba(255, 192, 203, 0.2);
+      color: #b8325a;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      position: relative;
+      z-index: 1;
+    }
+    .badge span.dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #ff4d6d;
+    }
+    .teacher-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin: 6px auto 14px;
+      padding: 4px;
+      background: conic-gradient(from 180deg, #ff95c5, #ffc6ff, #9bf6ff, #ff95c5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+    .teacher-photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #ffffff;
+      background: #fff;
+    }
+    h1 {
+      font-size: 22px;
+      color: #222222;
+      margin-bottom: 6px;
+      position: relative;
+      z-index: 1;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #7b7b7b;
+      margin-bottom: 14px;
+      position: relative;
+      z-index: 1;
+    }
+    .message {
+      font-size: 14px;
+      line-height: 1.6;
+      color: #444444;
+      background: #fff7fb;
+      border-radius: 16px;
+      padding: 12px 14px;
+      margin-bottom: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .message strong {
+      color: #c9184a;
+    }
+    .audio-box {
+      background: #f3f8ff;
+      border-radius: 16px;
+      padding: 10px 12px 12px;
+      margin-bottom: 4px;
+      position: relative;
+      z-index: 1;
+    }
+    .audio-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1d4ed8;
+      margin-bottom: 6px;
+    }
+    audio { width: 100%; }
+    .note {
+      font-size: 11px;
+      color: #9ca3af;
+      margin-top: 4px;
+    }
+    @media (max-width: 480px) {
+      .card { padding: 20px 18px 22px; }
+      .teacher-photo { width: 135px; height: 135px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">
+      <span class="dot"></span>
+      20/11 - Lớp 7A kính tặng cô hiệu trưởng
+    </div>
+
+    <!-- Ảnh cô hiệu trưởng: dùng file co.jpg bạn đã upload -->
+    <div class="teacher-photo">
+      <img src="co.jpg" alt="Cô hiệu trưởng" />
+    </div>
+
+    <h1>Kính gửi cô hiệu trưởng kính yêu</h1>
+    <p class="subtitle">Những lời tri ân sâu sắc nhất từ tập thể lớp 7A.</p>
+
+    <div class="message">
+      Nhân dịp 20/11, tập thể lớp 7A chúng em xin gửi đến cô hiệu trưởng những lời chúc ý nghĩa nhất.
+      Cô là người lãnh đạo xuất sắc, luôn tạo ra môi trường học tập tích cực cho chúng em.
+      Chúng em chúc cô sức khỏe dồi dào và thành công ngày càng lớn.
+    </div>
+
+    <div class="audio-box">
+      <div class="audio-title">🎵 Bài hát kính tặng cô hiệu trưởng</div>
+      <!-- Nhạc: dùng file nhac-co.mp3 bạn đã upload -->
+      <audio controls>
+        <source src="nhac-co.mp3" type="audio/mpeg" />
+        Trình duyệt của cô không hỗ trợ phát nhạc.
+      </audio>
+      <div class="note">
+        Khi cô bấm Play, ảnh và lời chúc vẫn luôn hiển thị phía trên trong suốt lúc nghe nhạc.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
